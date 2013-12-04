@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131203215105) do
+ActiveRecord::Schema.define(version: 20131204020316) do
 
   create_table "cookbooks", force: true do |t|
     t.string   "recipe"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20131203215105) do
     t.string   "tool"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "name"
   end
 
   create_table "ingredients", force: true do |t|
