@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9879ba9d-5667-4905-8c2c-ee597e88a66f" name="Default" comment="most of the way through Bronze Star Territory">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cookbooks/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/cookbooks/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/cookbook.rb" afterPath="$PROJECT_DIR$/app/models/cookbook.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ingredient.rb" afterPath="$PROJECT_DIR$/app/models/ingredient.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/recipe.rb" afterPath="$PROJECT_DIR$/app/models/recipe.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+    <list default="true" id="9879ba9d-5667-4905-8c2c-ee597e88a66f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ada-Cooks.iws" />
@@ -21,7 +16,7 @@
     <file path="/20131203215027_create_ingredients.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386110059408" ignored="false" />
     <file path="/schema.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386187059505" ignored="false" />
     <file path="/20131203230011_add_user_id_to_cookbooks.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386111673292" ignored="false" />
-    <file path="/Dummy.txt" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386192271737" ignored="false" />
+    <file path="/Dummy.txt" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386199084781" ignored="false" />
     <file path="/20131204020316_add_name_to_cookbook.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386122656204" ignored="false" />
     <file path="/20131204021709_add_name_to_cookbook_string.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386123579723" ignored="false" />
     <file path="/20131204044836_add_ids_to_cookbooks_recipes.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386132626366" ignored="false" />
@@ -30,7 +25,7 @@
     <file path="$PROJECT_DIR$/../sinatra practice/.idea/workspace.xml" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386185321453" ignored="false" />
     <file path="/20131204192825_add_descript_to_recipes.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386185470911" ignored="false" />
     <file path="/_form.html.erb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386195571003" ignored="false" />
-    <file path="/recipes_controller.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386197320506" ignored="false" />
+    <file path="/recipes_controller.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386200318898" ignored="false" />
     <file path="/20131204201629_recipe_ingredient.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386188307061" ignored="false" />
     <file path="/recipe_ingredient.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386188551242" ignored="false" />
     <file path="/cookbook_recipe.rb" changelist="9879ba9d-5667-4905-8c2c-ee597e88a66f" time="1386188566335" ignored="false" />
@@ -100,19 +95,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="recipe.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
+      <file leaf-file-name="cookbook_recipe.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/cookbook_recipe.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookbook_recipe.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/cookbook_recipe.rb">
+      <file leaf-file-name="recipes_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="51" column="39" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.27289048">
               <folding />
             </state>
           </provider>
@@ -127,28 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookbook.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/cookbook.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ingredient.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ingredient.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="30" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="17" selection-start="513" selection-end="513" vertical-scroll-proportion="0.7185741">
+            <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.29166666">
               <folding />
             </state>
           </provider>
@@ -178,7 +155,6 @@
         <option value="$PROJECT_DIR$/app/views/ingredients/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/cookbooks/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/recipes/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131204044810_create_cookbooks_recipes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131204044836_add_ids_to_cookbooks_recipes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131203215105_create_tools.rb" />
@@ -188,6 +164,7 @@
         <option value="$PROJECT_DIR$/app/models/cookbook.rb" />
         <option value="$PROJECT_DIR$/app/models/ingredient.rb" />
         <option value="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
       </list>
     </option>
   </component>
@@ -700,7 +677,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28162292" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20286396" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -756,7 +733,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="most of the way through Bronze Star Territory" />
+    <option name="LAST_COMMIT_MESSAGE" value="When creating new recipes, user can select from a list of existing cookbooks to put the recipe into" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -773,6 +750,7 @@
     <MESSAGE value="User can add new cookbooks" />
     <MESSAGE value="User can now add recipes (without ingredients)" />
     <MESSAGE value="most of the way through Bronze Star Territory" />
+    <MESSAGE value="When creating new recipes, user can select from a list of existing cookbooks to put the recipe into" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -788,13 +766,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/recipes/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="66" selection-start="683" selection-end="683" vertical-scroll-proportion="3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="35" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -855,20 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cookbook_recipe.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cookbook.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="28" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
@@ -885,7 +842,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="513" selection-end="513" vertical-scroll-proportion="0.7185741">
+        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.29166666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.080789946">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cookbook_recipe.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="39" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.27289048">
           <folding />
         </state>
       </provider>
