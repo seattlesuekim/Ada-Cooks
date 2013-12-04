@@ -1,5 +1,4 @@
 class Recipe < ActiveRecord::Base
-  belongs_to :cookbook
-  has_many :ingredients
+  has_many :ingredients, through: :cookbooks_recipeses
   has_many :tools
 end
