@@ -1,5 +1,5 @@
-require 'spec_helper'
+# require 'spec_helper'
 
-describe Recipe do 
+# describe Recipe do 
   
-end
+# end

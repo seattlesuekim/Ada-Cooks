@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20131204203608) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
-    t.text     "instructions" #Changed from "method" to "instructions" to make it work with RSpec
+    t.text     "method"
     t.boolean  "vegan"
     t.boolean  "vegetarian"
     t.boolean  "GF"
