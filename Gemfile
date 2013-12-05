@@ -10,7 +10,7 @@ gem 'rails', '4.0.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
   gem 'factory_girl_rails' # Added for use with http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html
 end
 
