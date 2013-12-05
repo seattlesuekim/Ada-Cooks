@@ -11,6 +11,7 @@ gem 'rails', '4.0.1'
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
+  gem 'factory_girl_rails' # Added for use with http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html
 end
 
 group :test do
