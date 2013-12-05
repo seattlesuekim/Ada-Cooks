@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+    <strong>Name:</strong>
+    <%= @recipe.name %>
+</p>
+
+<p>
+    <strong>Description:</strong>
+    <%= @recipe.description %>
+</p>
+
+<p>
+    <strong>Method:</strong>
+    <%= @recipe.method %>
+</p>
+
+<p>
+    <strong>Categories:</strong>
+    Vegan: <%= @recipe.vegan %><br>
+    Vegetarian:<%= @recipe.vegetarian %><br>
+    Gluten Free:<%= @recipe.GF %>
+</p>
+
+<p><strong>Cookbooks:</strong>
+    <% @recipe.cookbooks.each do |cookbook| %>
+    <%= cookbook.name %>
+        <% end %>
+    <br>
+</p>
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %>
+<%= link_to 'Back', recipes_path %>

@@ -1,0 +1,57 @@
+<%= form_for(@recipe) do |f| %>
+    <% if @recipe.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+
+            <ul>
+                <% @recipe.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+
+    <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+
+    <!--User should be able to add this recipe to one of the cookbooks that the user has already created-->
+    <!--User should be able to add n ingredients to each recipe-->
+
+    <div class="field">
+        <%= f.label :description %>
+        <%= f.text_area :description %>
+    </div>
+
+    <div class="field">
+        <%= f.label :method %>
+        <%= f.text_area :method %>
+    </div>
+
+    <div class="field">
+        <%= f.label :vegan %>
+        <%= f.check_box :vegan %>
+    </div>
+
+    <div class="field">
+        <%= f.label :vegetarian %>
+        <%= f.check_box :vegetarian %>
+    </div>
+
+    <div class="field">
+        <%= f.label :GF %>
+        <%= f.check_box :GF %>
+    </div>
+
+    <%= select(:cookbook_recipes,
+               :recipe_id,
+               Cookbook.all.collect { |p| [p.name, p.id] },
+               {:selected => CookbookRecipe.where(:recipe_id => @recipe.id).map(&:cookbook_id)},
+               {'name' => 'recipe[cookbooks][]', :multiple => true}) %>
+
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>
