@@ -42,6 +42,13 @@ class CookbooksController < ApplicationController
   def update
     respond_to do |format|
       if @cookbook.update(cookbook_params)
+        params[:cookbook][:recipes].each do |recipe_id|
+          next if recipe_id.to_i == 0
+          recipe = Recipe.find(recipe_id.to_i)
+
+          @cookbook.recipes << recipe
+        end
+
         format.html { redirect_to @cookbook, notice: 'Cookbook was successfully updated.' }
         format.json { head :no_content }
       else

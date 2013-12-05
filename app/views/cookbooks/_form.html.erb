@@ -20,6 +20,8 @@
     <%= f.text_field :name %>
   </div>
 
+    <%= f.select(:recipes, @recipes, {}, {:multiple => true}) %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
