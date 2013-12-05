@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131204203608) do
+ActiveRecord::Schema.define(version: 20131205201834) do
 
   create_table "cookbook_recipes", force: true do |t|
     t.datetime "created_at"
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20131204203608) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
-    t.text     "instructions" #Changed from "method" to "instructions" to make it work with RSpec
+    t.text     "instructions"
     t.boolean  "vegan"
     t.boolean  "vegetarian"
     t.boolean  "GF"
