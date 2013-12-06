@@ -76,6 +76,6 @@ class CookbooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cookbook_params
-      params.require(:cookbook).permit(:user_id, :name)
+      params.require(:cookbook).permit(:user_id, :name, :recipes)
     end
 end
