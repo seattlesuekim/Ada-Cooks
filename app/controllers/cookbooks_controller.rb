@@ -47,6 +47,13 @@ class CookbooksController < ApplicationController
           recipe = Recipe.find(recipe_id.to_i)
 
           @cookbook.recipes << recipe
+
+          params[:cookbook][:tools].each do |tool_id|
+            next if tool_id.to_i == 0
+            tool = Tool.find(tool_id.to_i)
+
+            @cookbook.tools << tool
+          end
         end
 
         format.html { redirect_to @cookbook, notice: 'Cookbook was successfully updated.' }
@@ -76,6 +83,6 @@ class CookbooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cookbook_params
-      params.require(:cookbook).permit(:user_id, :name, :recipes => {})
+      params.require(:cookbook).permit(:user_id, :name, :recipes => {}, :tools => {})
     end
 end

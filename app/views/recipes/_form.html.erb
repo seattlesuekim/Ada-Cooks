@@ -47,6 +47,7 @@
 
     <!-- This gives a select box containing the cookbooks which the recipe is in. It also highlights them correctly
     when editing -->
+    <p>Choose the cookbook(s) where this recipe will go:</p>
     <%= select(:cookbook_recipes,
                :recipe_id,
                Cookbook.all.collect { |p| [p.name, p.id] },

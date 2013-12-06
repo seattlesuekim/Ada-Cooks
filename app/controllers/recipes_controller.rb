@@ -4,6 +4,7 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
+    #@matching_recipes = Recipe.search(params[:search])
     @recipes = Recipe.all
   end
 

@@ -20,6 +20,8 @@ module AdaCooks
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
     config.generators do |g| # W added this to work with RSpec using http://http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html
       g.test_framework :rspec,
         :fixtures => true,

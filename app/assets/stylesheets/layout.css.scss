@@ -1,0 +1,60 @@
+div.bg {
+    z-index: -2;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:hover {
+    color: #4b1742;
+}
+
+div.select_boxes select {
+    background-color: white;
+    opacity: 0.8;
+
+}
+
+table {
+    width: 50%;
+    box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #7F7F00;
+}
+
+table td{
+    vertical-align: middle;
+    background-color: white;
+    border: 1px solid #7F7F00;
+    border-width:0px 1px 1px 0px;
+    text-align:left;
+    padding:7px;
+    font-size:10px;
+    color:#000000;
+}
+
+table th {
+    padding: 3px;
+    background:-o-linear-gradient(bottom, #d7ed12 5%, #a8a220 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d7ed12), color-stop(1, #a8a220) );
+    background:-moz-linear-gradient( center top, #d7ed12 5%, #a8a220 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#d7ed12", endColorstr="#a8a220");	background: -o-linear-gradient(top,#d7ed12,a8a220);
+
+    background-color:#d7ed12;
+    border:0px solid #7f7f00;
+    text-align:center;
+    border-width:0px 0px 1px 1px;
+    font-size:14px;
+    font-family:Arial;
+    font-weight:bold;
+    color:#000000;
+}
+

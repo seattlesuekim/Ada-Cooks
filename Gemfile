@@ -12,6 +12,7 @@ group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails'
   gem 'factory_girl_rails' # Added for use with http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html
+  gem 'debugger'
 end
 
 group :test do
@@ -39,6 +40,11 @@ gem 'turbolinks', '1.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.2'
+
+# Bootstrapper
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

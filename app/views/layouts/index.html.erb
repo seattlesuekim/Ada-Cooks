@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%= stylesheet_link_tag "static", media: "all", "data-turbolinks-track" => true %>
+</head>
+
+<body>
+<img src="/assets/leaf.jpg" id="background-image">
+
+<div id="wrapper">
+
+    <a href="/users"><div class="header"><p>Welcome to Ada Cooks<br>
+        Create. Collect. Cook!</p></div></a>
+
+  <%= yield %>
+</div>
+</body>
+
+</html>

@@ -20,11 +20,21 @@
     <%= f.text_field :name %>
   </div>
 
+    <div class="select_boxes">
+    <p>Choose the recipes you'd like to have in this cookbook:</p>
     <%= select(:cookbook_recipes,
                :cookbook_id,
                Recipe.all.collect { |p| [p.name, p.id] },
                {:selected => CookbookRecipe.where(:cookbook_id => @cookbook.id).map(&:recipe_id)},
                {'name' => 'cookbook[recipes][]', :multiple => true}) %>
+
+    <p>Choose the tools you'd like to have in this cookbook:</p>
+    <%= select(:cookbook_tools,
+               :cookbook_id,
+               Tool.all.collect { |p| [p.name, p.id] },
+               {:selected => CookbookTool.where(:cookbook_id => @cookbook.id).map(&:tool_id)},
+               {'name' => 'cookbook[tools][]', :multiple => true}) %>
+    </div>
 
   <div class="actions">
     <%= f.submit %>

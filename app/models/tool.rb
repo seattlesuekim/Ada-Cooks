@@ -1,3 +1,4 @@
 class Tool < ActiveRecord::Base
-  belongs_to :recipe
+  has_many :recipe_tools
+  has_many :recipes, through: :recipe_tools
 end
