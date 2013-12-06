@@ -1,27 +1,48 @@
 <h1>Listing users</h1>
 
 <table>
-  <thead>
+    <thead>
     <tr>
-      <th>Name</th>
-      <th></th>
-      <th></th>
-      <th></th>
+        <th>ID</th>
+        <th>Name</th>
+        <th></th>
+        <th></th>
+        <th></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.name %></td>
+            <td><%= link_to 'Show', user %></td>
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+            <td><%= link_to 'Destroy', user, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
     <% end %>
-  </tbody>
+    </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+
+<div class="navbar">
+    <ul>
+        <li><%= link_to 'New User', new_user_path %>
+        </li>
+        <li>
+            <a href="/cookbooks">Cookbooks</a>
+        </li>
+        <li>
+            <a href="/recipes">Recipes</a>
+        </li>
+        <li>
+            <a href="/ingredients">Ingredients</a>
+        </li>
+        <li>
+            <a href="/tools">Tools</a>
+        </li>
+        <li><a href="/">Back to Home</a></li>
+    </ul>
+</div>
