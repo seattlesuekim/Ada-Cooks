@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#background-image {
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#wrapper {
+    position: relative;
+    width: 800px;
+    min-height: 400px;
+    margin: auto;
+    color: #333;
+}
+
+a:hover {
+    background-color: #808080;
+    opacity: 0.7
+}
+
+div.header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -111px;
+    margin-left: -240px;
+    background-color: #9BA880;
+    opacity: 0.8;
+    border-corner-shape: scoop;
+    border-radius: 30px;
+    border: 2px solid #333;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+div.header p {
+    opacity: 1;
+    z-index: 3;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+}
