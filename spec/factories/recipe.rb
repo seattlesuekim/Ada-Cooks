@@ -7,5 +7,6 @@ FactoryGirl.define do
     f.vegan false
     f.vegetarian true
     f.GF true
+    # f.cookbooks {}
   end
 end

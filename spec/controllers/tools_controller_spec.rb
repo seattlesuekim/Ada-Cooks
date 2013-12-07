@@ -18,143 +18,133 @@ require 'spec_helper'
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
 
-describe ToolsController do
+# describe ToolsController do
 
-  # This should return the minimal set of attributes required to create a valid
-  # Tool. As you add validations to Tool, be sure to
-  # adjust the attributes here as well.
-  let(:valid_attributes) { {  } }
+#   describe "GET index" do
+#     it "assigns all tools as @tools" do
+#       tool = Tool.create! valid_attributes
+#       get :index, {}, valid_session
+#       assigns(:tools).should eq([tool])
+#     end
+#   end
 
-  # This should return the minimal set of values that should be in the session
-  # in order to pass any filters (e.g. authentication) defined in
-  # ToolsController. Be sure to keep this updated too.
-  let(:valid_session) { {} }
+#   describe "GET show" do
+#     it "assigns the requested tool as @tool" do
+#       tool = Tool.create! valid_attributes
+#       get :show, {:id => tool.to_param}, valid_session
+#       assigns(:tool).should eq(tool)
+#     end
+#   end
 
-  describe "GET index" do
-    it "assigns all tools as @tools" do
-      tool = Tool.create! valid_attributes
-      get :index, {}, valid_session
-      assigns(:tools).should eq([tool])
-    end
-  end
+#   describe "GET new" do
+#     it "assigns a new tool as @tool" do
+#       get :new, {}, valid_session
+#       assigns(:tool).should be_a_new(Tool)
+#     end
+#   end
 
-  describe "GET show" do
-    it "assigns the requested tool as @tool" do
-      tool = Tool.create! valid_attributes
-      get :show, {:id => tool.to_param}, valid_session
-      assigns(:tool).should eq(tool)
-    end
-  end
+#   describe "GET edit" do
+#     it "assigns the requested tool as @tool" do
+#       tool = Tool.create! valid_attributes
+#       get :edit, {:id => tool.to_param}, valid_session
+#       assigns(:tool).should eq(tool)
+#     end
+#   end
 
-  describe "GET new" do
-    it "assigns a new tool as @tool" do
-      get :new, {}, valid_session
-      assigns(:tool).should be_a_new(Tool)
-    end
-  end
+#   describe "POST create" do
+#     describe "with valid params" do
+#       it "creates a new Tool" do
+#         expect {
+#           post :create, {:tool => valid_attributes}, valid_session
+#         }.to change(Tool, :count).by(1)
+#       end
 
-  describe "GET edit" do
-    it "assigns the requested tool as @tool" do
-      tool = Tool.create! valid_attributes
-      get :edit, {:id => tool.to_param}, valid_session
-      assigns(:tool).should eq(tool)
-    end
-  end
+#       it "assigns a newly created tool as @tool" do
+#         post :create, {:tool => valid_attributes}, valid_session
+#         assigns(:tool).should be_a(Tool)
+#         assigns(:tool).should be_persisted
+#       end
 
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new Tool" do
-        expect {
-          post :create, {:tool => valid_attributes}, valid_session
-        }.to change(Tool, :count).by(1)
-      end
+#       it "redirects to the created tool" do
+#         post :create, {:tool => valid_attributes}, valid_session
+#         response.should redirect_to(Tool.last)
+#       end
+#     end
 
-      it "assigns a newly created tool as @tool" do
-        post :create, {:tool => valid_attributes}, valid_session
-        assigns(:tool).should be_a(Tool)
-        assigns(:tool).should be_persisted
-      end
+#     # describe "with invalid params" do
+#     #   it "assigns a newly created but unsaved tool as @tool" do
+#     #     # Trigger the behavior that occurs when invalid params are submitted
+#     #     Tool.any_instance.stub(:save).and_return(false)
+#     #     post :create, {:tool => {  }}, valid_session
+#     #     assigns(:tool).should be_a_new(Tool)
+#     #   end
 
-      it "redirects to the created tool" do
-        post :create, {:tool => valid_attributes}, valid_session
-        response.should redirect_to(Tool.last)
-      end
-    end
+#     #   it "re-renders the 'new' template" do
+#     #     # Trigger the behavior that occurs when invalid params are submitted
+#     #     Tool.any_instance.stub(:save).and_return(false)
+#     #     post :create, {:tool => {  }}, valid_session
+#     #     response.should render_template("new")
+#     #   end
+#     # end
+#   end
 
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved tool as @tool" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Tool.any_instance.stub(:save).and_return(false)
-        post :create, {:tool => {  }}, valid_session
-        assigns(:tool).should be_a_new(Tool)
-      end
+#   describe "PUT update" do
+#     describe "with valid params" do
+#       it "updates the requested tool" do
+#         tool = Tool.create! valid_attributes
+#         # Assuming there are no other tools in the database, this
+#         # specifies that the Tool created on the previous line
+#         # receives the :update_attributes message with whatever params are
+#         # submitted in the request.
+#         Tool.any_instance.should_receive(:update).with({ "these" => "params" })
+#         put :update, {:id => tool.to_param, :tool => { "these" => "params" }}, valid_session
+#       end
 
-      it "re-renders the 'new' template" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Tool.any_instance.stub(:save).and_return(false)
-        post :create, {:tool => {  }}, valid_session
-        response.should render_template("new")
-      end
-    end
-  end
+#       it "assigns the requested tool as @tool" do
+#         tool = Tool.create! valid_attributes
+#         put :update, {:id => tool.to_param, :tool => valid_attributes}, valid_session
+#         assigns(:tool).should eq(tool)
+#       end
 
-  describe "PUT update" do
-    describe "with valid params" do
-      it "updates the requested tool" do
-        tool = Tool.create! valid_attributes
-        # Assuming there are no other tools in the database, this
-        # specifies that the Tool created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        Tool.any_instance.should_receive(:update).with({ "these" => "params" })
-        put :update, {:id => tool.to_param, :tool => { "these" => "params" }}, valid_session
-      end
+#       it "redirects to the tool" do
+#         tool = Tool.create! valid_attributes
+#         put :update, {:id => tool.to_param, :tool => valid_attributes}, valid_session
+#         response.should redirect_to(tool)
+#       end
+#     end
 
-      it "assigns the requested tool as @tool" do
-        tool = Tool.create! valid_attributes
-        put :update, {:id => tool.to_param, :tool => valid_attributes}, valid_session
-        assigns(:tool).should eq(tool)
-      end
+#     # describe "with invalid params" do
+#     #   it "assigns the tool as @tool" do
+#     #     tool = Tool.create! valid_attributes
+#     #     # Trigger the behavior that occurs when invalid params are submitted
+#     #     Tool.any_instance.stub(:save).and_return(false)
+#     #     put :update, {:id => tool.to_param, :tool => {  }}, valid_session
+#     #     assigns(:tool).should eq(tool)
+#     #   end
 
-      it "redirects to the tool" do
-        tool = Tool.create! valid_attributes
-        put :update, {:id => tool.to_param, :tool => valid_attributes}, valid_session
-        response.should redirect_to(tool)
-      end
-    end
+#     #   it "re-renders the 'edit' template" do
+#     #     tool = Tool.create! valid_attributes
+#     #     # Trigger the behavior that occurs when invalid params are submitted
+#     #     Tool.any_instance.stub(:save).and_return(false)
+#     #     put :update, {:id => tool.to_param, :tool => {  }}, valid_session
+#     #     response.should render_template("edit")
+#     #   end
+#     # end
+#   end
 
-    describe "with invalid params" do
-      it "assigns the tool as @tool" do
-        tool = Tool.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Tool.any_instance.stub(:save).and_return(false)
-        put :update, {:id => tool.to_param, :tool => {  }}, valid_session
-        assigns(:tool).should eq(tool)
-      end
+#   describe "DELETE destroy" do
+#     it "destroys the requested tool" do
+#       tool = Tool.create! valid_attributes
+#       expect {
+#         delete :destroy, {:id => tool.to_param}, valid_session
+#       }.to change(Tool, :count).by(-1)
+#     end
 
-      it "re-renders the 'edit' template" do
-        tool = Tool.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Tool.any_instance.stub(:save).and_return(false)
-        put :update, {:id => tool.to_param, :tool => {  }}, valid_session
-        response.should render_template("edit")
-      end
-    end
-  end
+#     it "redirects to the tools list" do
+#       tool = Tool.create! valid_attributes
+#       delete :destroy, {:id => tool.to_param}, valid_session
+#       response.should redirect_to(tools_url)
+#     end
+#   end
 
-  describe "DELETE destroy" do
-    it "destroys the requested tool" do
-      tool = Tool.create! valid_attributes
-      expect {
-        delete :destroy, {:id => tool.to_param}, valid_session
-      }.to change(Tool, :count).by(-1)
-    end
-
-    it "redirects to the tools list" do
-      tool = Tool.create! valid_attributes
-      delete :destroy, {:id => tool.to_param}, valid_session
-      response.should redirect_to(tools_url)
-    end
-  end
-
-end
+# end
